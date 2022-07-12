@@ -250,6 +250,7 @@ void CEvoSalesmanTourDlg::OnBnClickedStart()
 UINT CEvoSalesmanTourDlg::WorkerThread(LPVOID lpParam)
 {
 	CEvoSalesmanTourDlg* pDlg = (CEvoSalesmanTourDlg*)lpParam;
+	// якщо немає доступу до вікна діалогу, потік завершиться з помилкою
 	if (NULL == pDlg || NULL == pDlg->GetSafeHwnd())
 		return 1;
 	

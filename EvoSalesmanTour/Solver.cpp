@@ -18,7 +18,7 @@ void Solver::NextGeneration()
 		{
 			m_population.emplace(m_top_tours[i].Mutate());
 		}
-		// ... і мутацій напрямку
+		// ... і мутацій напряму
 		for (int k = 0; k < m_rotation_number; ++k)
 		{
 			m_population.emplace(m_top_tours[i].Rotate());

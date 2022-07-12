@@ -14,7 +14,7 @@ private:
 	int m_population_size;
 	// Кількість простих мутацій
 	int m_mutation_number;
-	// Кількість мутацій напрямку
+	// Кількість мутацій напряму
 	int m_rotation_number;
 	// Максимальна кількість поколінь
 	int m_generations_limit;
@@ -26,7 +26,7 @@ private:
 	void StartPopulation();
 	// генерування нового покоління
 	void NextGeneration();
-	// Природній відбір
+	// Природний відбір
 	void Survive();
 public:
 	// інформування про хід обчислень
